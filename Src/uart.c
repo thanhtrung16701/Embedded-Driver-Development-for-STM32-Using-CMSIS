@@ -266,6 +266,7 @@ uint8_t uart2_read(void)
   return USART2->DR;
 }
 
+
 void uart_set_baudrate(USART_TypeDef *pUARTx, uint32_t PeriClk, uint32_t BaudRate)
 {
    pUARTx->BRR = compute_uart_bd(PeriClk,BaudRate);
